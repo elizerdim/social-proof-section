@@ -12,10 +12,12 @@
     <title>Frontend Mentor | Social proof section</title>
   </head>
   <body>
-    <section>
-      <h2>10,000+ of our users love our products.</h2>
-      <p>We only provide great products combined with excellent customer service. See what our satisfied customers are saying about our services.</p>
-      <aside>
+    <section class="social-proof">
+      <div class="social-proof__description">
+        <h2>10,000+ of our users love our products.</h2>
+        <p>We only provide great products combined with excellent customer service. See what our satisfied customers are saying about our services.</p>
+      </div>
+      <aside class="social-proof__ratings">
         <article>
           <svg width="117" height="16" xmlns="http://www.w3.org/2000/svg">
             <path id="star" d="M16.539 6.097a.297.297 0 00-.24-.202l-5.36-.779L8.542.26a.296.296 0 00-.53 0L5.613 5.117l-5.36.779a.297.297 0 00-.165.505l3.88 3.78-.917 5.34a.297.297 0 00.43.312l4.795-2.52 4.794 2.52a.296.296 0 00.43-.313l-.916-5.338L16.464 6.4c.08-.08.11-.197.075-.304z" fill="#EF9546" fill-rule="nonzero"/>
@@ -47,30 +49,32 @@
           <p>Rated 5 Stars in BestTech</p>
         </article>
       </aside>
-      <article>
-        <header>
-          <img src="./images/image-colton.jpg" alt="picture of Colton Smith">
-          <p>Colton Smith</p>
-          <p>Verified Buyer</p>
-        </header>
-        <p>"We needed the same printed design as the one we had ordered a week prior. Not only did they find the original order, but we also received it in time. Excellent!"</p>
-      </article>
-      <article>
-        <header>
-          <img src="./images/image-irene.jpg" alt="picture of Irene Roberts">
-          <p>Irene Roberts</p>
-          <p>Verified Buyer</p>
-        </header>
-        <p>"Customer service is always excellent and very quick turn around. Completely delighted with the simplicity of the purchase and the speed of delivery."</p>
-      </article>
-      <article>
-        <header>
-          <img src="./images/image-anne.jpg" alt="picture of Anne Wallace">
-          <p>Anne Wallace</p>
-          <p>Verified Buyer</p>
-        </header>
-        <p>"Put an order with this company and can only praise them for the very high standard. Will definitely use them again and recommend them to everyone!"</p>
-      </article>
+      <div class="social-proof__testimonials">
+        <article>
+          <header>
+            <img class="buyer-picture" src="./images/image-colton.jpg" alt="picture of Colton Smith">
+            <p class="buyer-name">Colton Smith</p>
+            <p class="verified-buyer">Verified Buyer</p>
+          </header>
+          <p class="quote">"We needed the same printed design as the one we had ordered a week prior. Not only did they find the original order, but we also received it in time. Excellent!"</p>
+        </article>
+        <article>
+          <header>
+            <img class="buyer-picture" src="./images/image-irene.jpg" alt="picture of Irene Roberts">
+            <p class="buyer-name">Irene Roberts</p>
+            <p class="verified-buyer">Verified Buyer</p>
+          </header>
+          <p class="quote">"Customer service is always excellent and very quick turn around. Completely delighted with the simplicity of the purchase and the speed of delivery."</p>
+        </article>
+        <article>
+          <header>
+            <img class="buyer-picture" src="./images/image-anne.jpg" alt="picture of Anne Wallace">
+            <p class="buyer-name">Anne Wallace</p>
+            <p class="verified-buyer">Verified Buyer</p>
+          </header>
+          <p class="quote">"Put an order with this company and can only praise them for the very high standard. Will definitely use them again and recommend them to everyone!"</p>
+        </article>
+      </div>
     </section>
 
     <footer class="attribution">
