@@ -16,7 +16,6 @@
 }
 
 body {
-    /* font-size: 0.95rem; */
     font-family: "League Spartan", sans-serif;
     background-image: url(./images/bg-pattern-top-mobile.svg),
         url(./images/bg-pattern-bottom-mobile.svg);
@@ -116,4 +115,60 @@ body {
 
 .attribution a {
     color: hsl(228, 45%, 44%);
+}
+
+@media only screen and (min-width: 400px) {
+    body {
+        background-image: url(./images/bg-pattern-top-desktop.svg),
+            url(./images/bg-pattern-bottom-desktop.svg);
+        background-repeat: no-repeat;
+        background-position: left top, right bottom;
+        background-size: 100%;
+    }
+}
+
+@media only screen and (min-width: 650px) {
+    .social-proof__description h1 {
+        max-width: 450px;
+        margin: 2.2em auto 0.5em;
+    }
+
+    .social-proof__description p {
+        max-width: 700px;
+        margin: 2em auto;
+    }
+
+    .social-proof__ratings {
+        display: flex;
+        flex-direction: column;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+    
+    .social-proof__ratings article:nth-child(2) {
+        align-self: center;
+    }
+
+    .social-proof__ratings article:nth-child(3) {
+        align-self: flex-end;
+    }
+
+    .social-proof__ratings article {
+        width: 400px;
+        display: flex;
+        margin: 0.5em;
+    }
+
+    .social-proof__ratings article p {
+        margin: 0.2em 0 0 1em;
+    }
+
+    .social-proof__testimonials {
+        display: flex;
+        gap: 10px;
+    }
+
+    .social-proof__testimonials article {
+        padding-right: 2em;
+    }
 }
