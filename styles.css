@@ -23,16 +23,19 @@ body {
     background-position: left top, right bottom;
     background-size: 100%;
     min-height: 100vh;
+    padding: 20px;
 }
 
 .social-proof {
-    margin: 0 1.5em;
+    margin: 0 auto;
+    width: 90%;
+    max-width: 1200px;
 }
 
 .social-proof__description h1 {
     font-size: 2.5em;
     color: var(--very-dark-magenta);
-    margin: 2.2em 1em 0.5em;
+    margin: 1.5em 1em 0.5em;
     text-align: center;
     letter-spacing: -0.03em;
     line-height: 0.8em;
@@ -55,6 +58,14 @@ body {
     border-radius: 10px;
 }
 
+.social-proof__ratings article svg {
+    width: 7em;
+}
+
+.social-proof__ratings article img {
+    width: 100px;
+}
+
 .social-proof__ratings article p {
     margin-top: 0.7em;
     color: var(--very-dark-magenta);
@@ -64,11 +75,13 @@ body {
 
 .social-proof__testimonials {
     margin: 3em 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 .social-proof__testimonials article {
     background-color: var(--very-dark-magenta);
-    margin-top: 1em;
     padding: 2.5em 2.5em 2em 2em; 
     border-radius: 10px;
 }
@@ -133,37 +146,40 @@ body {
     }
 
     .social-proof__description p {
-        max-width: 700px;
+        max-width: 600px;
         margin: 2em auto;
     }
 
     .social-proof__ratings {
         display: flex;
         flex-direction: column;
-        max-width: 500px;
-        margin: 0 auto;
+        align-items: center;
     }
 
     .social-proof__ratings article {
-        width: 400px;
-        display: flex;
         margin: 0.5em;
+        width: 400px;
+        text-align: left;
     }
 
     .social-proof__ratings article p {
+        display: inline;
         margin: 0.2em 0 0 1em;
+        width: 70%;
     }
     
     .social-proof__ratings article:nth-child(2) {
-        align-self: center;
+        margin-left: 10%;
     }
 
     .social-proof__ratings article:nth-child(3) {
-        align-self: flex-end;
+        margin-left: 20%;
     }
 
     .social-proof__testimonials {
         display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
         gap: 10px;
     }
 
@@ -175,7 +191,6 @@ body {
 
 @media only screen and (min-width: 900px) {
     body {
-        padding: 0 5em;
         background-size: 45%, 80%;
     }
 
@@ -186,7 +201,7 @@ body {
         grid-row-gap: 4em;
         grid-column-gap: 1em;
         margin: 5em auto;
-        max-width: 1200px;
+        width: 80%;
     }
 
     .social-proof__description,
@@ -222,30 +237,27 @@ body {
     }
 
     .social-proof__testimonials article {
-        margin: 0;
         flex: 1;
-        padding-right: 1.5em;
-        min-height: 20em;
-    }
-
-    .social-proof__testimonials article:nth-child(1) {
         align-self: flex-start;
+        margin: 0;
+        padding-right: 1.5em;
+        height: min-content;
+        min-height: 341px;
     }
 
     .social-proof__testimonials article:nth-child(2) {
-        align-self: flex-start;
         margin-top: 2em;
     }
 
     .social-proof__testimonials article:nth-child(3) {
-        align-self: flex-start;
         margin-top: 4em;
     }
 }
 
 @media only screen and (min-width: 1000px) {
     .social-proof__testimonials article {
-        min-height: 18em;
+        height: min-content;
+        min-height: 312px;
     }
 }
 
@@ -255,6 +267,7 @@ body {
     }
 
     .social-proof__testimonials article {
-        min-height: unset;
+        height: min-content;
+        min-height: 270px;
     }
 }
